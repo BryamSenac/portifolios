@@ -2,6 +2,9 @@
 @import url(./../fonts.css);
 @import url(./banner.css);
 @import url(./menu.css);
+@import url(./cartao.css);
+@import url(./tela_edit_cartao.css);
+@import url(./small_screens.css);
 
 body{
     overflow-x: hidden;

@@ -50,9 +50,19 @@
     border-radius: 50%;
     background-color: white;
     border: none;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
 }
 
 .btn_banner:hover{
+    width: 3.5vh;
+    height: 3.5vh;
+    margin: 1.75vh;
+}
+
+.botao-ativo {
     width: 3.5vh;
     height: 3.5vh;
     margin: 1.75vh;

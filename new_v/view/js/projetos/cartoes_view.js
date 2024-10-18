@@ -1,7 +1,7 @@
-import { buscarCarotes } from "../../../services/formacao/cartoes_services.js";
-import { excluirCartoes } from "../../../services/formacao/cartoes_services.js";
-import { mostraTelaCad } from "../../../controller/formacao/telacad.js";
-import { mostraTelaAtt } from "../../../controller/formacao/telaatt.js";
+import { buscarCarotes } from "../../../services/projetos/cartoes_services.js";
+import { mostraTelaCad } from "../../../controller/projetos/telacad.js";
+import { mostraTelaAtt } from "../../../controller/projetos/telaatt.js";
+import { mostraTelaDel } from "../../../controller/projetos/confirm_delete.js";
 
 export async function criarCartoes() {
     let sectionCartoes = document.getElementById('cartoes');
@@ -13,9 +13,9 @@ export async function criarCartoes() {
         let cartao = document.createElement('div');
         cartao.className = 'cartao';
         let h1 = document.createElement('h1');
-        h1.textContent = cartoes[i].nome;
+        h1.textContent = cartoes[i].linguagem;
         let h3 = document.createElement('h3');
-        h3.textContent = cartoes[i].valor;
+        h3.textContent = cartoes[i].nome;
         let imgTag = document.createElement('img');
         imgTag.src = cartoes[i].img;
 
@@ -25,21 +25,27 @@ export async function criarCartoes() {
         div.style.justifyContent = 'space-evenly'
 
         let button = document.createElement('button');
-        button.className = 'button_card';
-        button.textContent = 'EXCLUIR';
+        button.classList.add('button_card');
+        button.classList.add('excluir');
         button.addEventListener('click', ()=>{
-            excluirCartoes(i);
+            mostraTelaDel(i);
         });
+        let iconBin = document.createElement('i');
+        iconBin.classList.add('fa-solid');
+        iconBin.classList.add('fa-trash');
+
+        button.appendChild(iconBin);
 
         let buttonAtt = document.createElement('button');
-        buttonAtt.className = 'button_card';
+        buttonAtt.classList.add('button_card');
+        buttonAtt.classList.add('att');
         buttonAtt.textContent = 'ATT';
         buttonAtt.addEventListener('click', ()=>{
             mostraTelaAtt(i);
         });
 
-        div.appendChild(button);
         div.appendChild(buttonAtt);
+        div.appendChild(button);
 
         cartao.appendChild(h1);
         cartao.appendChild(imgTag);
@@ -49,7 +55,8 @@ export async function criarCartoes() {
         sectionCartoes.appendChild(cartao);
     }
     let cartaoAdd = document.createElement('button');
-    cartaoAdd.className = 'cartao';
+    cartaoAdd.classList.add('cartao');
+    cartaoAdd.classList.add('cartao_add');
     cartaoAdd.textContent = '+';
     cartaoAdd.addEventListener('click', ()=>{
         mostraTelaCad();
