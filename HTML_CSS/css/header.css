@@ -1,0 +1,59 @@
+header {
+    width: 100%;
+    height: 12%;
+    padding-top: 1vw;
+
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 5vw;
+    height: 5vw;
+
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+    background-image: url(./../img/logo.svg);
+    background-size: cover;
+    margin: 0 1vw;
+
+    border-radius: 50%;
+    box-shadow: 0.2vw 0.2vw 0.4vw 0.1vw #35353550;
+}
+
+#proficao {
+    font-family: var(--fontPrimary);
+    font-size: 0.8vw;
+    color: var(--blackColor);
+
+    margin-left: 8vw;
+
+    transition: all 0.1s ease-in-out;
+}
+
+
+#proficao:hover {
+    font-size: 0.9vw;
+}
+
+#logo:hover {
+    animation: flip 0.5s ease-in-out forwards;
+}
+
+@keyframes flip {
+
+    0% {
+        transform: rotate3d(-1, 1, 0, 0deg);
+    }
+
+    50% {
+        transform: rotate3d(-1, 1, 0, 180deg);
+    }
+
+    100% {
+        transform: rotate3d(-1, 1, 0, 0deg);
+    }
+
+
+}

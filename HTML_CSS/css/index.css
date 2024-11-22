@@ -1,0 +1,28 @@
+@import url(./header.css);
+@import url(./section.css);
+@import url(./footer.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Julius+Sans+One&display=swap');
+/*Valores padrões*/
+:root{
+    --pinkColor: #F14598;
+    --blueColor: #26B2DA;
+    --yellowColor: #F2BA57;
+    --whiteColor: #F5F4F4;
+    --blackColor: #353535;
+
+    --fontPrimary: 'Julius Sans One', sans-serif;
+    --fontSecundary: 'Bebas Neue', sans-serif;
+}
+
+/*Body reset*/
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+
+    background-color: var(--whiteColor);
+}
