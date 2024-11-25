@@ -1,25 +1,29 @@
-footer{
-    width: 100%;
-    height: 10%;
+footer {
+    width: 100%; /* O rodapé ocupa 100% da largura da tela */
+    height: 10%; /* Altura do rodapé é definida como 10% da altura da tela */
 
-    padding-right: 1vw;
-    display: flex;
-    justify-content: end;
-    align-items: center;
+    padding-right: 1vw; /* Adiciona espaçamento à direita do rodapé */
+    display: flex; /* Ativa o Flexbox para organizar os elementos do rodapé */
+    justify-content: end; /* Alinha os itens (botões) à direita do rodapé */
+    align-items: center; /* Centraliza verticalmente os itens dentro do rodapé */
 }
 
-.btn_footer{
-    background-color: transparent;
-    border: none;
+.btn_footer {
+    background-color: transparent; /* Torna o fundo do botão transparente */
+    border: none; /* Remove a borda padrão dos botões */
 
-    font-size: 3vw;
-    color: var(--blackColor);
-    margin: 0 0.8vw 1.5vh 0 ;
+    font-size: 3vw; /* Define o tamanho da fonte proporcional à largura da tela */
+    color: var(--blackColor); /* Define a cor dos ícones com a variável global de cor preta */
+    margin: 0 0.8vw 1.5vh 0; /* Adiciona espaçamento ao redor dos botões */
+    /* - 0 no topo
+       - 0.8vw à direita
+       - 1.5vh abaixo
+       - 0 à esquerda */
 
-    cursor: pointer;
-    transition: all 0.1s ease-in-out;
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+    transition: all 0.1s ease-in-out; /* Suaviza a transição de qualquer transformação */
 }
 
-.btn_footer:hover{
-    transform: scale(1.2);
+.btn_footer:hover {
+    transform: scale(1.2); /* Aumenta o tamanho do botão em 20% ao passar o mouse */
 }

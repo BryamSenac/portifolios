@@ -1,28 +1,39 @@
 @import url(./header.css);
+/* Importa o arquivo de estilos específico para o cabeçalho */
+
 @import url(./section.css);
+/* Importa o arquivo de estilos específico para a seção principal */
+
 @import url(./footer.css);
+/* Importa o arquivo de estilos específico para o rodapé */
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Julius+Sans+One&display=swap');
-/*Valores padrões*/
-:root{
-    --pinkColor: #F14598;
-    --blueColor: #26B2DA;
-    --yellowColor: #F2BA57;
-    --whiteColor: #F5F4F4;
-    --blackColor: #353535;
+/* Importa fontes do Google Fonts: 
+   - "Bebas Neue" para títulos ou textos de destaque
+   - "Julius Sans One" para textos elegantes e modernos */
 
-    --fontPrimary: 'Julius Sans One', sans-serif;
-    --fontSecundary: 'Bebas Neue', sans-serif;
+/*Valores padrões*/
+:root {
+    /* Paleta de Cores */
+    --pinkColor: #F14598; /* Rosa */
+    --blueColor: #26B2DA; /* Azul */
+    --yellowColor: #F2BA57; /* Amarelo */
+    --whiteColor: #F5F4F4; /* Branco */
+    --blackColor: #353535; /* Preto */
+
+    /* Fontes */
+    --fontPrimary: 'Julius Sans One', sans-serif; /* Fonte principal para textos elegantes */
+    --fontSecundary: 'Bebas Neue', sans-serif;   /* Fonte secundária para títulos ou destaques */
 }
 
 /*Body reset*/
-body{
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
+body {
+    margin: 0; /* Remove margens padrão do corpo */
+    padding: 0; /* Remove espaçamentos padrão do corpo */
+    width: 100vw; /* Define a largura da página para ocupar 100% da largura da janela */
+    height: 100vh; /* Define a altura da página para ocupar 100% da altura da janela */
 
-    overflow: hidden;
+    overflow: hidden; /* Remove barras de rolagem para que o conteúdo fique fixo na tela */
 
-    background-color: var(--whiteColor);
+    background-color: var(--whiteColor); /* Define o fundo como a cor branca da paleta */
 }

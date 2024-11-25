@@ -1,78 +1,77 @@
 section {
-    width: 100%;
-    height: 78%;
-
-    overflow: visible;
+    width: 100%; /* Largura total da seção */
+    height: 78%; /* Altura da seção */
+    overflow: visible; /* Permite que o conteúdo ultrapasse os limites da seção, se necessário */
 }
 
 #img_princ {
-    width: 50vw;
-    height: 100vh;
+    width: 50vw; /* Largura da imagem principal definida como metade da largura da janela */
+    height: 100vh; /* Altura da imagem principal igual à altura da janela */
 
-    position: absolute;
-    left: 15vw;
-    top: 5vh;
+    position: absolute; /* Permite posicionamento livre dentro do contêiner */
+    left: 15vw; /* Posiciona a imagem 15% à direita da borda esquerda */
+    top: 5vh; /* Posiciona a imagem 5% abaixo da borda superior */
 
-    background-image: url(./../img/picture_principal.png);
-    background-size: contain;
+    background-image: url(./../img/picture_principal.png); /* Define a imagem de fundo */
+    background-size: contain; /* A imagem é redimensionada para caber no contêiner sem cortar */
 
-    z-index: -1;
+    z-index: -1; /* Coloca a imagem principal atrás de outros elementos */
 }
 
 #textos {
-    position: absolute;
-    right: 15vw;
-    top: -15vh;
-    width: 28%;
-    height: 100%;
+    position: absolute; /* Permite posicionamento livre dentro do contêiner */
+    right: 15vw; /* Posiciona o bloco de texto 15% à esquerda da borda direita */
+    top: -15vh; /* Move o bloco de texto 15% para cima além da borda superior */
+    width: 28%; /* Largura do bloco de texto como 28% da largura da janela */
+    height: 100%; /* Altura do bloco de texto igual à altura da seção */
 
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
+    display: flex; /* Ativa o modelo de layout flexbox */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    justify-content: end; /* Alinha os itens no final do contêiner verticalmente */
 }
 
 #textos h2 {
-    position: absolute;
-    
-    font-family: var(--fontSecundary);
-    color: var(--blackColor);
-    
-    cursor:default;
-    transition: all 0.1s ease-in-out;
+    position: absolute; /* Permite posicionamento específico para os títulos */
+
+    font-family: var(--fontSecundary); /* Fonte secundária definida nas variáveis globais */
+    color: var(--blackColor); /* Cor preta para os títulos */
+
+    cursor: default; /* Indica que os títulos não são clicáveis */
+    transition: all 0.1s ease-in-out; /* Suaviza transições de estilo, como cor */
 }
 
 #nome {
-    font-size: 14vw;
-    margin-bottom: 20vw;
+    font-size: 14vw; /* Tamanho da fonte proporcional à largura da janela */
+    margin-bottom: 20vw; /* Espaçamento abaixo do nome */
 }
 
 #sobrenome {
-    font-size: 10.6vw;
-    margin-bottom: 12vw;
+    font-size: 10.6vw; /* Tamanho da fonte proporcional à largura da janela */
+    margin-bottom: 12vw; /* Espaçamento abaixo do sobrenome */
 }
 
 #descricao {
-    font-size: 1.1vw;
-    text-align: justify;
+    font-size: 1.1vw; /* Tamanho da fonte proporcional à largura da janela */
+    text-align: justify; /* Alinha o texto com espaçamento uniforme nas margens */
 
-    font-family: var(--fontPrimary);
-    color: var(--blackColor);
-    
-    margin-bottom: 4vw;
+    font-family: var(--fontPrimary); /* Fonte primária definida nas variáveis globais */
+    color: var(--blackColor); /* Cor preta para o texto da descrição */
 
-    z-index: 1;
-    cursor:default;
-    transition: all 0.1s ease-in-out;
+    margin-bottom: 4vw; /* Espaçamento abaixo da descrição */
+
+    z-index: 1; /* Garante que o texto fique na frente de elementos com z-index menor */
+    cursor: default; /* Indica que o texto não é clicável */
+    transition: all 0.1s ease-in-out; /* Suaviza transições de estilo, como cor */
 }
 
 #nome:hover {
-    color: var(--yellowColor);
+    color: var(--yellowColor); /* Altera a cor do nome para amarelo ao passar o mouse */
 }
 
 #sobrenome:hover {
-    color: var(--blueColor);
+    color: var(--blueColor); /* Altera a cor do sobrenome para azul ao passar o mouse */
 }
 
 #descricao:hover {
-    color: var(--pinkColor);
+    color: var(--pinkColor); /* Altera a cor da descrição para rosa ao passar o mouse */
 }
