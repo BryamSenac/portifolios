@@ -28,32 +28,18 @@ header {
     color: var(--blackColor);
 
     margin-left: 8vw;
-
-    transition: all 0.1s ease-in-out;
-}
-
-
-#proficao:hover {
-    font-size: 0.9vw;
 }
 
 #logo:hover {
-    animation: flip 0.5s ease-in-out forwards;
+    animation: flip 1s ease-in-out forwards;
 }
 
 @keyframes flip {
 
     0% {
-        transform: rotate3d(-1, 1, 0, 0deg);
+        transform: rotateY(0); /* Começa na posição inicial */
     }
-
-    50% {
-        transform: rotate3d(-1, 1, 0, 180deg);
-    }
-
     100% {
-        transform: rotate3d(-1, 1, 0, 0deg);
+        transform: rotateY(1800deg); /* 5 voltas completas */
     }
-
-
 }
