@@ -1,0 +1,14 @@
+@import url(./img.css);
+@import url(./textos.css);
+
+section {
+    width: 100%;
+    height: 78%;
+    overflow: visible;
+}
+
+@media (max-width: 480px) {
+    section {
+        height: 80%;
+    }
+}

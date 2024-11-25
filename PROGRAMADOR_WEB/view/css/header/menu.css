@@ -1,0 +1,72 @@
+
+#menu {
+    display: none;
+}
+
+@media (max-width: 482px) {
+    
+    #menu {
+        height: 0.5vh;
+        position: absolute;
+
+        border-radius: 5vw;
+        
+        display: block;
+
+        background-color: var(--blackColor);
+
+        transition: all 0.2s ease-in-out;
+    }
+
+    #menu::after {
+        content: '';
+        width: 7vw;
+        height: 0.5vh;
+        position: absolute;
+
+        background-color: var(--blackColor);
+        border-radius: 5vw;
+        transition: all 0.2s ease-in-out;
+    }
+
+    #menu::before {
+        content: '';
+        width: 7vw;
+        height: 0.5vh;
+        position: absolute;
+
+        background-color: var(--blackColor);
+        border-radius: 5vw;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .menu_active {
+       width: 0;
+       right: 12vw;
+    }
+
+    .menu_active::before {
+        top: 0;
+        transform: rotate(45deg);
+    }
+
+    .menu_active::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+
+    .menu_desative {
+        width: 7vw;
+        right: 5vw;
+    }
+
+    .menu_desative::before {
+        top: 2vw;
+        transform: rotate(0deg);
+    }
+
+    .menu_desative::after {
+        top: -2vw;
+        transform: rotate(0deg);
+    }
+}

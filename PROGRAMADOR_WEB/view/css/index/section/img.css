@@ -1,0 +1,22 @@
+#img_princ {
+    width: 47vw; 
+    height: 90vh;
+
+    position: absolute; 
+    left: 15vw; 
+    top: 5vh;
+
+    background-image: url(./../../../../assets/img/picture_principal.png); 
+    background-size: contain; 
+    background-repeat: no-repeat;
+
+    z-index: -1; 
+}
+
+@media (max-width: 480px){
+    #img_princ{
+        width: 110vw;
+        left: -5vw;
+        top: 50vw;
+    }
+}
