@@ -2,6 +2,8 @@
 /* Importa o arquivo de estilos específico para o cabeçalho */
 @import url(./banner/banner.css);
 /* Importa o arquivo de estilos específico para o banner */
+@import url(./cards.css);
+/* Importa o arquivo de estilos específico para os cartoes */
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Julius+Sans+One&display=swap');
 /* Importa fontes do Google Fonts: 
