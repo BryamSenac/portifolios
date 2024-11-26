@@ -1,4 +1,4 @@
-import { closeMenu, openMenu } from "./../view/js/menu.js";
+import { closeMenu, openMenu } from "../view/js/menu_view.js";
 
 let open = false;
 

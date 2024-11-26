@@ -1,0 +1,35 @@
+@import url(./../header/header.css);
+/* Importa o arquivo de estilos específico para o cabeçalho */
+@import url(./banner/banner.css);
+/* Importa o arquivo de estilos específico para o banner */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Julius+Sans+One&display=swap');
+/* Importa fontes do Google Fonts: 
+   - "Bebas Neue" para títulos ou textos de destaque
+   - "Julius Sans One" para textos elegantes e modernos */
+
+/*Valores padrões*/
+:root {
+    /* Paleta de Cores */
+    --pinkColor: #F14598; /* Rosa */
+    --blueColor: #26B2DA; /* Azul */
+    --yellowColor: #F2BA57; /* Amarelo */
+    --whiteColor: #F5F4F4; /* Branco */
+    --blackColor: #353535; /* Preto */
+
+    /* Fontes */
+    --fontPrimary: 'Julius Sans One', sans-serif; /* Fonte principal para textos elegantes */
+    --fontSecundary: 'Bebas Neue', sans-serif;   /* Fonte secundária para títulos ou destaques */
+}
+
+/*Body reset*/
+body {
+    margin: 0; /* Remove margens padrão do corpo */
+    padding: 0; /* Remove espaçamentos padrão do corpo */
+    width: 100vw; /* Define a largura da página para ocupar 100% da largura da janela */
+    height: 100vh; /* Define a altura da página para ocupar 100% da altura da janela */
+
+    overflow-x: hidden; /* Remove barras de rolagem para que o conteúdo fique fixo na tela */
+
+    background-color: var(--whiteColor); /* Define o fundo como a cor branca da paleta */
+}
