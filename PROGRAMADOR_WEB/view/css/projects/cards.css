@@ -80,3 +80,51 @@
 .card:hover .card_description {
     opacity: 1;
 }
+
+@media (max-width: 480px){
+    #cards{
+        margin-top: 10%;
+        grid-template-columns: 80vw;
+    }
+
+    .card_struct{
+        width: 80vw;
+        height: 12vh;
+
+        flex-direction: row;
+    }
+    
+    .card_title{
+        font-size: 4.5vw;
+    }
+
+    .card_img{
+        width: 15vw;
+        height: 15vh;
+    }
+
+    .card_lp{
+        display: none;
+    }
+
+    .card_description{
+        width: 50vw;
+        position: relative;
+        opacity: 1;
+        font-size: 2vw;
+    }
+
+    .card:hover .card_struct {
+        transform: rotateY(0deg);
+        box-shadow: 0.6vw 0.8vw 1vw rgba(35, 35, 35, 0.3);
+    }    
+    .card:hover .card_title {
+        opacity: 1;
+    }    
+    .card:hover .card_lp {
+        opacity: 0;
+    }    
+    .card:hover .card_img {
+        opacity: 1;
+    }
+}
