@@ -2,10 +2,12 @@
 /* Importa o arquivo de estilos específico para o cabeçalho */
 @import url(./banner/banner.css);
 /* Importa o arquivo de estilos específico para o banner */
-@import url(./cards.css);
+@import url(./cards/cards.css);
 /* Importa o arquivo de estilos específico para os cartoes */
 @import url(./../footer.css);
 /* Importa o arquivo de estilos específico para o rodapé */
+@import url(./validation/validation.css);
+/* Importa o arquivo de estilos específico para os campos de validação */
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Julius+Sans+One&display=swap');
 /* Importa fontes do Google Fonts: 

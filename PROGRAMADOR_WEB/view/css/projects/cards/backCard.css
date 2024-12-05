@@ -1,0 +1,77 @@
+.card_description {
+    width: 13vw;
+    transform: scaleX(-1);
+    position: absolute;
+    text-align: center;
+    font-family: var(--fontPrimary);
+    font-size: 1vw;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.btns_card {
+    position: absolute;
+    bottom: 5vh;
+}
+
+.card:hover .card_description {
+    opacity: 1;
+}
+
+.card_button {
+    width: 3vw;
+    height: 3vw;
+
+    font-size: 1vw;
+    margin: 0 0.5vw;
+
+    border-radius: 50%;
+    border: none;
+    color: var(--whiteColor);
+
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.card_button i {
+    transition: all 0.2s ease-in-out;
+}
+
+.card:hover .card_button {
+    opacity: 1;
+}
+
+.card_button:hover i {
+    transform: scale(1.2);
+}
+
+#edit_button {
+    background-color: var(--pinkColor);
+}
+
+#delete_button {
+    background-color: var(--blueColor);
+}
+
+@media (max-width: 480px) {
+    .card_description {
+        width: 50vw;
+        position: relative;
+        opacity: 1;
+        font-size: 2vw;
+    }
+
+    .btns_card {
+        bottom: 1vh;
+        right: 2vw;
+    }
+
+    .card_button {
+        width: 6vw;
+        height: 6vw;
+
+        font-size: 2vw;
+        opacity: 1;
+    }
+}

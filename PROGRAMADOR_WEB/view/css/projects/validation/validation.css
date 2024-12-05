@@ -1,0 +1,42 @@
+@import url(./validation_screan.css);
+
+#login{
+    width: 100vw;
+    height: 5vh;
+    border: none;
+    background-color: var(--blackColor);
+
+    font-family: var(--fontSecundary);
+    font-size: 1vw;
+    
+    color: var(--whiteColor);
+
+    cursor: pointer;
+}
+
+#validation_section{
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: -150vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(35, 35, 35, 0.5);
+    z-index: 1;
+
+    transition: all 0.4s ease-in-out;
+}
+
+@media (max-width: 480px) {
+    #login{
+        height: 4vh;
+        font-size: 4vw;
+    }
+
+    
+}

@@ -1,0 +1,87 @@
+@import url(./frontCard.css);
+@import url(./backCard.css);
+
+#cards {
+    width: 80%;
+    margin: 5% 10% 0 10%;
+    display: grid;
+    grid-template-columns: repeat(4, 15vw);
+    gap: 3vw;
+    justify-content: space-between;
+}
+
+.card_struct {
+    width: 15vw;
+    height: 40vh;
+
+    border-radius: 1.5vw;
+    box-shadow: 0.6vw 0.8vw 1vw rgba(35, 35, 35, 0.3);
+
+    padding: 2vw;
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.btn_cards{
+    width: 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    opacity: 0;
+    position: absolute;
+}
+
+
+.card:hover .card_struct {
+    transform: rotateY(180deg);
+    box-shadow: -0.6vw 0.8vw 1vw rgba(35, 35, 35, 0.3);
+}
+
+
+.card:hover .btn_cards{
+    opacity: 1;
+}
+
+#add_icon{
+    font-size: 5vw;
+    color: var(--blackColor);
+    
+    cursor: pointer;
+    
+    transition: all 0.2s ease-in-out;
+}
+
+.card_struct:hover #add_icon{
+    transform: scale(1.3);
+}
+
+@media (max-width: 480px){
+    #cards{
+        margin-top: 10%;
+        grid-template-columns: 80vw;
+    }
+
+    .card_struct{
+        width: 80vw;
+        height: 12vh;
+
+        flex-direction: row;
+    }
+
+    .card:hover .card_struct {
+        transform: rotateY(0deg);
+        box-shadow: 0.6vw 0.8vw 1vw rgba(35, 35, 35, 0.3);
+    }   
+    
+    .btn_cards{
+        opacity: 1;
+        position: relative;
+    }
+}
