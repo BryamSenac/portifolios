@@ -3,7 +3,7 @@ import { startCards } from "./cards_controller.js";
 import { createHeader } from "../../view/js/header_view.js";
 import { createFooter } from "../../view/js/footer_view.js";
 import { activateEditionMode } from "./edition_projects_controller.js";
-import { createButtonActivate, createValidateUser } from "../../view/js/projects/edition_projects_view.js";
+import { createButtonActivate, createValidateUser, createInputsCard } from "../../view/js/projects/edition_projects_view.js";
 
 window.switchBanner = switchBanner;
 window.activateEditionMode = activateEditionMode;
@@ -20,4 +20,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
     createButtonActivate();
     createValidateUser();
+
+    createInputsCard();
 });

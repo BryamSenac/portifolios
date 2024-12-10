@@ -8,6 +8,8 @@
 /* Importa o arquivo de estilos específico para o rodapé */
 @import url(./validation/validation.css);
 /* Importa o arquivo de estilos específico para os campos de validação */
+@import url(./inputs_cards/section_inputs.css);
+/* Importa o arquivo de estilos específico para os campos de edição/criaçõa dos cartões */
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Julius+Sans+One&display=swap');
 /* Importa fontes do Google Fonts: 

@@ -1,3 +1,5 @@
+import { switchInputs } from "./edition_projects_view.js";
+
 const cardsSection = document.getElementById('cards');
 
 export function createCards(cards) {
@@ -47,8 +49,11 @@ export function createEditionsButtons() {
         const buttonsCard = document.createElement('div');
         buttonsCard.className = 'btns_card';
 
-        const editButton = createButtonCard('edit_button', 'fa-file-pen', () => { });
-        const deleteButton = createButtonCard('delete_button', 'fa-trash', () => { });
+        const editButton = createButtonCard('edit_button', 'fa-file-pen', () => {
+            event.stopPropagation();
+            switchInputs(()=>{console.log('teste do btn editar')});
+        });
+        const deleteButton = createButtonCard('delete_button', 'fa-trash', () => {event.stopPropagation();});
 
         buttonsCard.appendChild(editButton);
         buttonsCard.appendChild(deleteButton);
@@ -84,6 +89,10 @@ function creatAddCard() {
     icon.id = 'add_icon';
     icon.classList.add('fa-solid');
     icon.classList.add('fa-plus');
+
+    addCard.addEventListener('click', ()=>{
+        switchInputs(()=>{console.log('teste do btn add')});
+    });
 
     addCard.appendChild(icon);
 
