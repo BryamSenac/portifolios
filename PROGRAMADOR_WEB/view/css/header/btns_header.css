@@ -1,0 +1,101 @@
+
+#right_header {
+    width: 35%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.btn_header {
+    width: 30%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 0.8vw;
+
+    border: none;
+    border-radius: 50vw;
+
+    font-size: 0.8vw;
+    color: var(--whiteColor);
+
+    cursor: pointer;
+}
+
+#btn_header_home {
+    background-color: var(--pinkColor);
+}
+
+#btn_header_projects {
+    background-color: var(--blueColor);
+}
+
+#btn_header_formation {
+    background-color: var(--yellowColor);
+}
+
+.btn_header i {
+    -webkit-transition: all 0.2s ease-in-out; /* Prefixo para Webkit */
+    -moz-transition: all 0.2s ease-in-out; /* Prefixo para Firefox antigo */
+    transition: all 0.2s ease-in-out;
+}
+
+.btn_header:hover i {
+    -webkit-transform: scale(1.3); /* Prefixo para Webkit */
+    -moz-transform: scale(1.3); /* Prefixo para Firefox antigo */
+    transform: scale(1.3);
+}
+
+@media (max-width: 768px){
+    #right_header{
+        justify-content: end;
+    }
+    .btn_header{
+        width: 4vh;
+        height: 4vh;
+        margin-left: 1vw;
+
+        justify-content: center;
+
+        font-size: 2vw;
+    }
+
+    .btn_header h3{
+        display: none;
+    }
+}
+
+@media (max-width: 480px){
+    #right_header{
+        height: 35%;
+        width: 20%;
+
+        padding-top: 20vw;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        position: absolute;
+        top: 0;
+        right: -50vw;
+    }
+
+    .btn_header{
+        width: 7vh;
+        height: 7vh;
+
+        margin: 0;
+
+        font-size: 5vw;
+    }
+}

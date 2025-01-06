@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Julius+Sans+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--whiteColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+:root {
+    /* Paleta de Cores */
+    --pinkColor: #F14598; /* Rosa */
+    --blueColor: #26B2DA; /* Azul */
+    --yellowColor: #F2BA57; /* Amarelo */
+    --whiteColor: #F5F4F4; /* Branco */
+    --blackColor: #353535; /* Preto */
+
+    /* Fontes */
+    --fontPrimary: 'Julius Sans One', sans-serif; /* Fonte principal para textos elegantes */
+    --fontSecundary: 'Bebas Neue', sans-serif;   /* Fonte secundária para títulos ou destaques */
+}

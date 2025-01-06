@@ -1,0 +1,29 @@
+@import url(./../constants.css);
+@import url(./logo_header.css);
+@import url(./btns_header.css);
+@import url(./menu_header.css);
+
+header{
+    width: 100vw;
+    height: 15vh;
+
+    max-width: 1920px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1vw 2vw;
+}
+
+@media (max-width: 768px){
+    header{
+        height: 6vh;
+    }
+}
+@media (max-width: 480px){
+    header{
+        align-items: start;
+    }
+}

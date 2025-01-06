@@ -1,0 +1,43 @@
+#left_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo_header {
+    margin-right: 1.5vw;
+
+    border-radius: 50%;
+    box-shadow: 0.2vw 0.3vw 0.6vw black; /* Fallback para navegadores sem suporte a variáveis */
+    
+    -webkit-box-shadow: 0.2vw 0.3vw 0.6vw var(--blackColor); /* Prefixo para Webkit */
+    -moz-box-shadow: 0.2vw 0.3vw 0.6vw var(--blackColor); /* Prefixo para Firefox antigo */
+    box-shadow: 0.2vw 0.3vw 0.6vw var(--blackColor);
+}
+
+#profession_header {
+    font-size: 1.2vw;
+    font-family: var(--fontPrimary), Arial, sans-serif;
+    color: var(--blackColor);
+}
+
+@media (max-width: 768px){
+    #logo_header{
+        height: 4vh;
+
+        margin-right: 2%;
+    }
+    #profession_header{
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 480px){
+    #logo_header{
+        display: none;
+    }
+    #profession_header{
+        font-size: 7vw;
+        margin: 3vw;
+    }
+}
