@@ -1,0 +1,34 @@
+
+#contacts_footer{
+    color: var(--whiteColor);
+}
+
+#name_footer{
+    font-family: var(--fontSecundary);
+    font-size: 2.5vw;
+}
+
+#contacts_footer h4{
+    font-family: var(--fontPrimary);
+    font-size: 0.8vw;
+}
+
+@media (max-width: 800px) {
+    #name_footer{
+        font-size: 5vw;
+    }
+    #contacts_footer h4{
+        font-size: 1.8vw;
+    }
+}
+@media (max-width: 480px) {
+    #contacts_footer{
+        text-align: center;
+    }
+    #name_footer{
+        font-size: 8vw;
+    }
+    #contacts_footer h4{
+        font-size: 3vw;
+    }
+}

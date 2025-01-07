@@ -1,4 +1,4 @@
-const BASE_PATH = '../view/pages/'
+const BASE_PATH = './../pages/'
 
 export const pages = [
     {

@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Julius+Sans+One&display=swap');
+@import url(./footer/footer.css);
+@import url(./header/header.css);
 
 *{
     box-sizing: border-box;

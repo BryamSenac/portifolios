@@ -21,7 +21,7 @@
     color: var(--blackColor);
 }
 
-@media (max-width: 768px){
+@media (max-width: 850px){
     #logo_header{
         height: 4vh;
 

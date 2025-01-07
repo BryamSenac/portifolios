@@ -1,7 +1,7 @@
 import { closeMenuHeader, openMenuHeader } from "../view/js/header_view.js";
 
 export function navigationHeader(link) {
-    window.open(link, '_blank');
+    window.location.href = link;
 }
 
 let menuOpen = true;

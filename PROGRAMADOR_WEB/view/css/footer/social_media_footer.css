@@ -1,0 +1,29 @@
+.btn_footer{
+    color: var(--whiteColor);
+    font-size: 3vw;
+
+    background-color: transparent;
+    border: none;
+
+    margin-left: 1vw;
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.btn_footer:hover{
+    transform: scale(1.2);
+}
+
+@media (max-width: 800px) {
+    .btn_footer{
+        font-size: 6vw;
+    }
+}
+@media (max-width: 480px) {
+    .btn_footer{
+        margin-top: 3vw;
+        margin-left: 2vw;
+        font-size: 8vw;
+    }
+}
