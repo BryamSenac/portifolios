@@ -1,0 +1,10 @@
+#img_primary img{
+    width: 50vw;
+}
+
+@media (max-width: 480px) {
+    #img_primary img{
+        width: 90vw;
+        filter: blur(1vw);
+    }
+}

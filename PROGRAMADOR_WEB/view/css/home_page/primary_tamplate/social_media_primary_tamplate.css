@@ -1,0 +1,26 @@
+#social_media_primary_tamplate{ 
+    display: flex;
+    justify-content: end;
+
+    position: absolute;
+    right: 2vw;
+    bottom: 3vh;
+}
+
+.btn_medias{
+    margin-left: 0.7vw;
+
+    font-size: 3vw;
+
+    background-color: transparent;
+    border: none;
+
+    color: var(--blackColor);
+    transition: all 0.2s ease-in-out;
+
+    cursor: pointer;
+}
+
+.btn_medias:hover{
+    transform: scale(1.2);
+}

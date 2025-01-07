@@ -1,0 +1,21 @@
+@import url(./information.css);
+@import url(./prymary_image.css);
+@import url(./social_media_primary_tamplate.css);
+
+#primary_tamplate{
+    width: 100vw;
+    height: 85vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+
+    padding: 0 8vw;
+}
+
+@media (max-width: 480px) {
+    #primary_tamplate{
+        height: 87vh;
+    }
+}
