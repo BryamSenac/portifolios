@@ -1,0 +1,36 @@
+#banners_div{
+    height: 40vh;
+
+    display: flex;
+    flex-direction: row;
+
+    position: absolute;
+    left: 0;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.banner{
+    width: 90vw;
+    height: 40vh;
+
+    margin: 0 5vw;
+    padding: 2vw;
+
+    color: var(--whiteColor);
+
+    background-position: center;
+    background-size: cover;
+}
+
+.banner_project{
+    font-family: var(--fontPrimary);
+    font-size: 3vw;
+}
+
+.banner_description{
+    font-family: var(--fontSecundary);
+    font-size: 1.3vw;
+
+    margin: 1vw;
+}

@@ -1,0 +1,31 @@
+#banners_buttons{
+    width: 100vw;
+    height: 5vh;
+
+    position: absolute;
+    margin-top: 33vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_banner{
+    width: 2vw;
+    height: 2vw;
+
+    margin: 0 0.5vw;
+
+    border-radius: 50%;
+
+    background-color: var(--whiteColor);
+
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.btn_banner:hover{
+    transform: scale(1.2);
+}
