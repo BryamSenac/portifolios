@@ -1,0 +1,43 @@
+#add_icon_card {
+    font-size: 5vw;
+    color: var(--blackColor);
+}
+
+.edition_butttons_div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 1vw;
+
+    cursor: pointer;
+}
+
+.edition_button,
+.delete_button {
+    width: 2.5vw;
+    height: 2.5vw;
+
+    margin: 0 0.5vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.2vw;
+
+    color: var(--whiteColor);
+
+    border-radius: 50%;
+    box-shadow: 0.2vw 0.3vw 0.6vw var(--boxShadows);
+}
+
+.edition_button {
+    background-color: var(--blueColor);
+}
+
+.delete_button {
+    background-color: var(--pinkColor);
+}

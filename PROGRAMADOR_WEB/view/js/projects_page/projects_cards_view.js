@@ -40,7 +40,8 @@ function createProjectsCards() {
 
         let descriptionCard = document.createElement('p');
         descriptionCard.textContent = project.description;
-        let buttonsDivCard = document.createElement('div');/*Trocar por uma função que cria esses botoes */
+        let buttonsDivCard = document.createElement('div');
+        buttonsDivCard.className = 'edition_butttons_div';
 
         cardBack.appendChild(descriptionCard);
         cardBack.appendChild(buttonsDivCard);
