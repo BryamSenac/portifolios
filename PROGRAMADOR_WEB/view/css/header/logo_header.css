@@ -12,7 +12,7 @@
     
     -webkit-box-shadow: 0.2vw 0.3vw 0.6vw var(--blackColor); /* Prefixo para Webkit */
     -moz-box-shadow: 0.2vw 0.3vw 0.6vw var(--blackColor); /* Prefixo para Firefox antigo */
-    box-shadow: 0.2vw 0.3vw 0.6vw var(--blackColor);
+    box-shadow: 0.2vw 0.3vw 0.6vw var(--boxShadows);
 }
 
 #profession_header {

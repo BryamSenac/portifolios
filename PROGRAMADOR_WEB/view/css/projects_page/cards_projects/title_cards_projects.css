@@ -1,0 +1,6 @@
+#projects_cards h1{
+    text-align: center;
+    margin: 5vw 0 2vw 0;
+    font-size: 2.2vw;
+    font-family: var(--fontPrimary);
+}

@@ -1,0 +1,28 @@
+.card_front img{
+    height: 8vw;
+
+    margin: 1vw 0;
+}
+
+.card_front h4, .card_front h5{
+    width: 100%;
+    text-align: center;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card_front h4{
+    font-size: 1vw;
+}
+.card_front h5{
+    font-size: 0.7vw;
+}
+
+.card_back p{
+    text-align: center;
+    margin: 0 1vw;
+
+    font-size: 0.6vw;
+}

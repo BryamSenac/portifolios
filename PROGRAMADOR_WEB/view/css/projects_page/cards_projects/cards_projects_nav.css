@@ -1,0 +1,46 @@
+@import url(./infos_card.css);
+@import url(./btns_card.css);
+
+.card_container {
+    perspective: 50vw;
+}
+
+.card {
+    width: 12vw;
+    height: 30vh;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.3s ease-in-out;
+}
+
+.card_container:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card_front, .card_back {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    backface-visibility: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 1vw;
+    box-shadow: 0.2vw 0.3vw 0.6vw var(--boxShadows);
+
+    font-family: var(--fontPrimary);
+    color: var(--blackColor);
+}
+
+.card_front {
+    z-index: 2;
+}
+
+.card_back {
+    transform: rotateY(180deg);
+    z-index: 1;
+}

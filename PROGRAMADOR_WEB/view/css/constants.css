@@ -23,6 +23,7 @@ body{
     --yellowColor: #F2BA57; /* Amarelo */
     --whiteColor: #F5F4F4; /* Branco */
     --blackColor: #353535; /* Preto */
+    --boxShadows: #35353588; /*Preto semitransparente */
 
     /* Fontes */
     --fontPrimary: 'Julius Sans One', sans-serif; /* Fonte principal para textos elegantes */

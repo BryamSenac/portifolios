@@ -1,0 +1,12 @@
+@import url(./cards_projects_nav.css);
+@import url(./title_cards_projects.css);
+
+#projects_nav{
+    width: 100vw;
+
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 15vw 15vw 15vw 15vw 15vw;
+    
+    gap: 1.5vw;
+}

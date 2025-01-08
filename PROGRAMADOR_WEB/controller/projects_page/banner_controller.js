@@ -8,8 +8,6 @@ export function switchBanner(index) {
 
     bannersDiv.style.left = `-${index}00vw`;
     currentBanner = index;
-
-    console.log(index);
     resetBtnsBannerSize(index);
 }
 
