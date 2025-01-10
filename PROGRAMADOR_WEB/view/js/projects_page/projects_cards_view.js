@@ -1,6 +1,10 @@
 import { projects } from './../../../model/projects_model.js'
 
-export function createProjectsCardsNav(projectsNav) {
+const projectsNav = document.getElementById('projects_cards');
+
+export function createProjectsCardsNav() {
+    projectsNav.innerHTML   = '';
+
     let titleNav = document.createElement('h1');
     titleNav.textContent = 'PROJETOS DESENVOLVIDOS PPOR MIM';
 

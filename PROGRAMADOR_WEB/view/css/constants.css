@@ -2,9 +2,6 @@
 @import url(./footer/footer.css);
 @import url(./header/header.css);
 
-@import url(./alert_dialog/alerts.css);
-@import url(./edition_mode/edition_mode.css);
-
 *{
     box-sizing: border-box;
     margin: 0;

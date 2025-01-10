@@ -1,6 +1,5 @@
 import { pages } from "../../model/pages_model.js";
 import { switchMenuHeader, navigationHeader } from "../../controller/header_controller.js";
-import { activateEditionMode } from "../../controller/edition_mode/edition_mode_controller.js";
 
 export function createHeader(header) {
     let leftHeader = createLeftHeader();
@@ -20,9 +19,6 @@ function createLeftHeader() {
     logo.id = 'logo_header';
     logo.alt = 'Logo'
     logo.src = './../../assets/img/logo.svg';
-    logo.addEventListener('click', ()=>{
-        activateEditionMode(document.getElementsByTagName('body')[0]);
-    });
 
     let profession = document.createElement('h3');
     profession.id = 'profession_header';
